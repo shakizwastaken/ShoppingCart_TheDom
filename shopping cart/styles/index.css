@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'anson';
+    src: url('/assets/fonts/ansonFont/anson-regular-webfont.ttf');
+    src: url('/assets/fonts/ansonFont/anson-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/ansonFont/anson-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/ansonFont/anson-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/ansonFont/anson-regular-webfont.svg#ansonregular') format('svg');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comicBold';
+    src: url('/assets/fonts/spaceComic/SpaceComics.ttf');
+}
+
+:root{
+
+    --white-- : #EEEEEE;
+    --main-- : #7971EA;
+    --lightGray: #393E46;
+    --gray-- : #222831;
+
+    --lightFont: 'anson';
+
+}
+
+*{
+    position: inherit;
+    list-style: none;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: none;
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .main-box {
+
+    background-color: var(--white--);
+    width: 90%;
+    margin: 3rem;
+
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+main .hero-title {
+    font-family: var(--lightFont);
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+main .main-box * {
+    margin: 10px;
+}
+
+main .main-box .item {
+    background-color: white;
+    width: 99%;
+    height: 12rem;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .main-box .item *{
+    margin: 10px;
+}
+
+main .main-box .item-details {
+    display: flex;
+}
+
+main .main-box .item-image {
+    width: 10rem;
+    height: 10rem;
+
+    align-self: center;
+    padding: 20px;
+}
+
+main .main-box .item-title h1 {
+    font-family: var(--lightFont);
+}
+
+main .main-box .item-title .sub {
+    font-family: var(--lightFont);
+    color: var(--lightGray);
+}
+main .chart-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--lightFont);
+
+}
+
+main .main-box .quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+}
+
+main .main-box .chart-details img {
+    max-width: 2rem;
+}
+
+main .main-box .quantity img {
+    width: 1rem;
+}
+main .main-box .item-details {
+    font-family: var(--lightFont);
+    font-size: 1.5rem;
+}
+

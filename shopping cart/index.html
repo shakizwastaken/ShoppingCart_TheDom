@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <title>Someshop | My Shopping Cart</title>
+
+</head>
+
+<body>
+    
+    <aside>
+
+            <div class="logo">
+                <h1>L</h1>
+            </div>
+
+            <div class="nav-items">
+
+                <ul>
+
+                    <li><a href=""><img src="/assets/icons/bag.png" alt=""></a> </li>
+                    <li><a href=""><img src="/assets/icons/heart.png" alt=""></a> </li>
+                    <li><a href=""><img src="/assets/icons/search.png" alt=""></a> </li>
+
+                </ul>
+
+            </div>
+
+    </aside>
+
+    <main>
+        
+        <h1 class="hero-title" >Shopping Cart:</h1>
+
+        <div class="main-box">
+
+            <div class="inner-box" id="items" >
+
+                <div itemId="0" class="item">
+
+                    <div class="item-details">
+
+                        <img class="item-image" src="/assets/images/product.webp" alt="">
+                    
+                    <div class="item-title" >
+                        <h1>Charger</h1> 
+                        <h4 class="sub">electronics</h4>
+                    </div>  
+
+                    </div>
+                    <div class="chart-details" >
+                       
+                        <div class="quantity">
+
+                            <button data-goal="inc" ><img src="/assets/icons/add.png" alt=""></button>
+                            <h4 class="qty">3</h4>
+                            <button data-goal="dec"><img src="/assets/icons/minus.png" alt=""></button>
+
+                        </div>
+
+                        <div class="price">
+                            <h4>$<span id="price">299</span></h4>
+                        </div>
+
+                        <button data-goal="delete"><img  src="/assets/icons/remove.png" alt=""></button>
+
+                    </div>
+
+                </div>
+
+                <div itemId="1" class="item">
+
+                    <div class="item-details">
+
+                        <img class="item-image" src="/assets/images/product.webp" alt="">
+                    
+                    <div class="item-title" >
+                        <h1>Charger</h1> 
+                        <h4 class="sub">electronics</h4>
+                    </div>  
+
+                    </div>
+                    <div class="chart-details" >
+                       
+                        <div class="quantity">
+
+                            <button id="inc" data-goal="inc" ><img src="/assets/icons/add.png" alt=""></button>
+                            <h4 id="dec" class="qty">3</h4>
+                            <button data-goal="dec"><img src="/assets/icons/minus.png" alt=""></button>
+
+                        </div>
+
+                        <div class="price">
+                            <h4>$<span id="price">299</span></h4>
+                        </div>
+
+                        <div class="remove">
+                            <button data-goal="delete"><img  src="/assets/icons/remove.png" alt=""></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/javascript/index.js"></script>
+
+</body>
+
+</html>
