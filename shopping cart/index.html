@@ -20,21 +20,15 @@
             </div>
 
             <div class="nav-items">
-
-                <ul>
-
-                    <li><a href=""><img src="/assets/icons/bag.png" alt=""></a> </li>
-                    <li><a href=""><img src="/assets/icons/heart.png" alt=""></a> </li>
-                    <li><a href=""><img src="/assets/icons/search.png" alt=""></a> </li>
-
-                </ul>
-
+                    <a href=""><img src="/assets/icons/bag.png" alt=""></a>
+                    <a href=""><img src="/assets/icons/heart.svg" alt=""></a> 
+                    <a href=""><img src="/assets/icons/search.png" alt=""></a>
             </div>
 
     </aside>
 
     <main>
-        
+            
         <h1 class="hero-title" >Shopping Cart:</h1>
 
         <div class="main-box">
@@ -47,13 +41,13 @@
 
                         <img class="item-image" src="/assets/images/product.webp" alt="">
                     
-                    <div class="item-title" >
-                        <h1>Charger</h1> 
-                        <h4 class="sub">electronics</h4>
-                    </div>  
+                        <div class="item-title" >
+                            <h1>Charger</h1> 
+                            <h4 class="sub">electronics</h4>
+                        </div>  
 
                     </div>
-                    <div class="chart-details" >
+                    <div class="cart-details" >
                        
                         <div class="quantity">
 
@@ -67,6 +61,8 @@
                             <h4>$<span id="price">299</span></h4>
                         </div>
 
+                        <button data-goal="fav" data-value= "false" ><img src="/assets/icons/heart.svg" alt=" style="fill: red;></button>
+
                         <button data-goal="delete"><img  src="/assets/icons/remove.png" alt=""></button>
 
                     </div>
@@ -79,18 +75,18 @@
 
                         <img class="item-image" src="/assets/images/product.webp" alt="">
                     
-                    <div class="item-title" >
-                        <h1>Charger</h1> 
-                        <h4 class="sub">electronics</h4>
-                    </div>  
+                        <div class="item-title" >
+                            <h1>Charger</h1> 
+                            <h4 class="sub">electronics</h4>
+                        </div>  
 
                     </div>
-                    <div class="chart-details" >
+                    <div class="cart-details" >
                        
                         <div class="quantity">
 
-                            <button id="inc" data-goal="inc" ><img src="/assets/icons/add.png" alt=""></button>
-                            <h4 id="dec" class="qty">3</h4>
+                            <button data-goal="inc" ><img src="/assets/icons/add.png" alt=""></button>
+                            <h4 class="qty">3</h4>
                             <button data-goal="dec"><img src="/assets/icons/minus.png" alt=""></button>
 
                         </div>
@@ -99,9 +95,9 @@
                             <h4>$<span id="price">299</span></h4>
                         </div>
 
-                        <div class="remove">
-                            <button data-goal="delete"><img  src="/assets/icons/remove.png" alt=""></button>
-                        </div>
+                        <button data-goal="fav" data-value= "false" ><img src="/assets/icons/heart.svg" alt=" style="fill: red;></button>
+
+                        <button data-goal="delete"><img  src="/assets/icons/remove.png" alt=""></button>
 
                     </div>
 
@@ -111,8 +107,43 @@
             </div>
 
         </div>
-
     </main>
+
+    <div class="checkout">
+
+        <h1>Checkout:</h1>
+
+        <div class="credit-card">
+
+            <div class="logo"><img src="/assets/icons/visa-logo.png" alt=""></div>
+
+            <h2 class="rightSide" >name</h2>
+            <h2>xxxx xxxx xxxx xxxx</h2>
+            <h2 class="rightSide" >xx/xx</h2>
+
+        </div>
+
+        <div class="cart-input">
+            <div class="input">
+                <label for="">Name:</label>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label for="">Card Number:</label>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label for="">Expiration Date:</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <button><h1>checkout</h1></button>
+
+    </div>
+
+    </div>
 
     <script src="/javascript/index.js"></script>
 
